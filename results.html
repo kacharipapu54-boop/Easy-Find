@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Find | explore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body>
+     <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon"><i data-lucide="house"></i></span>
+            <span class="logo-wordmark"><span class="logo-easy">Easy</span><b>Find</b></span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="results.html" class="nav-active">Explore</a>
+        </nav>
+    </header>
+    
+    <main class="result-page">
+        <section 
+             class="result-intro"
+             data-aos="fade-up">
+
+             <div class="hero-badge">Easy Find</div>
+             <h1>Find your place</h1>
+
+             <p>Browse PGs and rental rooms around you.</p>
+        </section>
+
+            <div 
+                class="result-search"
+                data-aos="fade-up"
+                data-aos-delay="100">
+                <i data-lucide="search"></i>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search by area, college, or landmark"
+                    autocomplete="off"
+                    aria-label="Search places"
+                >
+                <button
+                    class="clear-search"
+                    id="clearSearchButton"
+                    type="button"
+                    aria-label="Clear search"
+                >✕
+                </button>
+            </div>
+
+                <section
+                    class="filters"
+                    data-aos="fade-up"
+                    data-aos-delay="150">
+
+                    <div class="filter-group">
+                        <label>Suitable for</label>
+
+                        <div class="filter-button">
+                            <button class="filter-btn active" data-gender="All" type="button">All</button>
+                            <button class="filter-btn" data-gender="Boys" type="button">
+                                <i data-lucide="user"></i>
+                                Boys
+                            </button>
+                            <button class="filter-btn" data-gender="Girls" type="button">
+                                <i data-lucide="user"></i>
+                                Girls
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Property type</label>
+
+                        <div class="filter-button">
+                            <button class="filter-btn active" data-property-type="All" type="button">All</button>
+                            <button class="filter-btn" data-property-type="PG" type="button">
+                                <i data-lucide="home"></i>
+                                PG / Hostel
+                            </button>
+                            <button class="filter-btn" data-property-type="Room" type="button">
+                                <i data-lucide="door-open"></i>
+                                Rental Room
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                    <section 
+                        class="result-heading"
+                        data-aos="fade-up">
+                    
+                    <div>
+                        <p class="result-label">AVAILABLE PLACES</p>
+                        <h2>Places near you</h2>
+
+                    </div>
+
+                    <div class="result-count"
+                        id="resultCount">
+                        0 places found
+                    </div>
+                    
+                </section>
+
+                <section
+                    id="propertyContainer"
+                    class="property-grid"
+                    >
+                </section>
+
+                <section
+                    class="map-section"
+                    data-aos="fade-up">
+                
+                    <div class="map-heading">
+
+                        <div>
+
+                            <p class="result-label">LOCATION</p>
+                            <h2>Explore on Map</h2>
+                        </div>
+                    </div>
+
+                    <div id="map"></div>
+                
+                </section>
+
+
+
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

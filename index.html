@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Easy Find - Find nearby PGs and rental rooms for students and workers.">
+    <title>Easy Find</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon"><i data-lucide="house"></i></span>
+            <span class="logo-wordmark"><span class="logo-easy">Easy</span><b>Find</b></span>
+        </a>
+
+        <nav>
+            <a href="index.html" class="nav-active">Home</a>
+            <a href="results.html">Explore</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <section class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                ✦ FIND YOUR NEXT PG OR RENTAL ROOM NEARBY
+            </div>
+
+            <h1 data-aos="fade-up">Find</h1>
+
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="150">
+                Discover nearby PGs and Rental rooms around your location.
+            </p>
+
+            <div class="home-search" data-aos="zoom-in" data-aos-delay="250">
+                <i data-lucide="map-pin" class="search-icon"></i>
+
+                <input
+                    type="search"
+                    id="locationInput"
+                    placeholder="Search area, locality, or landmark"
+                    autocomplete="off"
+                    aria-label="Search location"
+                >
+
+                <button
+                    class="clear-search"
+                    id="clearSearchButton"
+                    type="button"
+                    aria-label="Clear search"
+                >
+                    ✕
+                </button>
+            </div>
+
+            <button
+                class="location-button"
+                id="currentLocationButton"
+                type="button"
+                data-aos="fade-up"
+                data-aos-delay="300"
+            >
+                <i data-lucide="navigation"></i>
+                Use my current location
+            </button>
+
+            <div class="selection-section" data-aos="fade-up" data-aos-delay="350">
+                <h3>What are you looking for?</h3>
+
+                <div class="type-selection">
+                    <button class="type-card active" data-type="PG" type="button">
+                        <div class="type-icon">
+                            <i data-lucide="home"></i>
+                        </div>
+
+                        <div class="type-copy">
+                            <strong>PG / Hostel</strong>
+                            <small>Find a PG</small>
+                        </div>
+
+                        <span class="selection-check">✅</span>
+                    </button>
+
+                    <button class="type-card" data-type="Room" type="button">
+                        <div class="type-icon">
+                            <i data-lucide="key"></i>
+                        </div>
+
+                        <div class="type-copy">
+                            <strong>Rental Room</strong>
+                            <small>Find a rental room</small>
+                        </div>
+
+                        <span class="selection-check">✅</span>
+                    </button>
+                </div>
+            </div>
+
+            <button
+                class="find-btn"
+                id="findButton"
+                type="button"
+                data-aos="fade-up"
+                data-aos-delay="450"
+            >
+                <i data-lucide="search"></i>
+                Find Places
+                <span class="arrow">➡️</span>
+            </button>
+
+            <p class="hero-notes">✦ Simple • Local • Easy to find</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Easy Find.</p>
+        <p>Helping students & workers find a place.</p>
+    </footer>
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
